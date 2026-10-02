@@ -41,12 +41,29 @@ public class UserServlet extends HttpServlet {
         resp.getWriter().write("{\"message\": \"Пользователь " + name + " создан!\"}");
     }
 
+    @Override
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.getWriter().write("Обработан PUT запрос");
+
+    }
+
+    @Override
+    protected void doPatch(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.getWriter().write("Обработан PATCH запрос");
+    }
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.getWriter().write("Обработан DELETE запрос");
+
+    }
+
     // Как обработать PATCH? (в HttpServlet нет doPatch)
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if ("PATCH".equalsIgnoreCase(req.getMethod())) {
             // логика для PATCH
-            resp.getWriter().write("Обработан PATCH запрос");
+            this.doPatch(req, resp);
         } else {
             // Для остальных методов вызываем стандартную реализацию
             super.service(req, resp);
