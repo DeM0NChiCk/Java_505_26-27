@@ -1,4 +1,4 @@
-<%--
+<%@ page import="ru.itis.java_505_2627.SessionServlet" %><%--
   Created by IntelliJ IDEA.
   User: karp2
   Date: 22.09.2026

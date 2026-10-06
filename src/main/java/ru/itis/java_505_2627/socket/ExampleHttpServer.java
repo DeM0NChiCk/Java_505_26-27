@@ -1,4 +1,4 @@
-package ru.itis.java_505_2526.socket;
+package ru.itis.java_505_2627.socket;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package ru.itis.java_505_2526;
+package ru.itis.java_505_2627;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

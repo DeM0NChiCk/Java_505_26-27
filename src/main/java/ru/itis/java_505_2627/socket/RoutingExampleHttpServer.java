@@ -1,4 +1,4 @@
-package ru.itis.java_505_2526.socket;
+package ru.itis.java_505_2627.socket;
 
 import lombok.extern.slf4j.Slf4j;
 
